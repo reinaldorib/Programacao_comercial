@@ -58,7 +58,65 @@
 					<td>linha 4 - coluna 2</td>
 				</tr>
 			</tbody>
+
 		</table>
 
+		<form action="/cadastro/" method="post">
+				Login: <input type="text" name="login" placeholder="digite seu login">
+				Senha: <input type="password" name="senha">
+
+				<input type="radio" name="sexo" value="1" checked> Masculino
+				<input type="radio" name="sexo" value="2"> Feminino
+
+				<input type="checkbox" name="veiculo1" value="bike" checked> eu tenho um camelo
+				<input type="checkbox" name="veiculo2" value="carro" checked> eu tenho um carro
+
+				<br>
+				Curso:
+				<select name="curso">
+					<option value="1">Ciencia da Compucao</option>
+					<option value="2">Direito</option>
+					<option value="3">Engenharia Elétrica</option>
+					<option value="4">Medicina</option>
+
+				</select>
+				<br>
+
+				Mensagem: <textarea name="message" rows="10" cols="30"></textarea>
+				Idade: <input type="number" name="idade" min="0" max="100" step="1" value="30">
+				Data de Nascimento: <input type="date" name="data_nascimento" min="2000-01-02">
+
+
+				<br>
+				Auto complete: <input list="golpes">
+				<datalist id="golpes">
+					<option>osoto-gari</option>
+					<option>o-uchi-gari</option>
+					<option>sasae-tsuri-komi-ashi</option>
+					<option>hane-goshi</option>
+				</datalist>
+
+				<input type="hidden" name="country" value="Brasil">
+
+				<input type="reset" name="Limpar">
+				<input type="submit" name="Enviar">
+
+				<button type="button" onclick="alert('Hello World')">Botao 1</button>
+
+				<button type="button" onclick="soma(5,10);">Botao 2</button>
+
+
+				<div id="area-mensagens">Elementos de Bloco</div>
+
+				Elements <span class="destaque"> de </span> linha
+
+
+				<h2>
+					<a href="http://www.w3schools.com/html/html_examples.asp" target="blank"> outros elementos
+					</a>
+				</h2>
+
+
+			</form>
 	</body>
 </html>
